@@ -216,3 +216,31 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ==========================================
+# AI4SE Project & Agent Security Hard Rules
+# ==========================================
+
+# 1. 凭据与敏感配置文件（硬性要求，绝不能提交）
+.env.local
+.env.*.local
+*.pem
+*.key
+credentials.json
+secrets/
+
+# 2. 智能体与框架产生的临时文件/工作区
+# 针对 Superpowers 框架或 subagent 运行时可能产生的本地缓存或日志
+.superpowers/
+.agents/
+agent_workspace/
+subagent_tmp/
+
+# 3. 操作系统与本地 IDE 缓存
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
