@@ -1,4 +1,4 @@
-# AI4SE 期末项目 · 通用要求（所有项目必读）
+# AI4SE 期末项目
 
 > *Spec-Driven, Subagent-Built, Human-Owned.*
 
