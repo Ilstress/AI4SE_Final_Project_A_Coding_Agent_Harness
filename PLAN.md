@@ -280,13 +280,16 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### 里程碑 M1: Data Contract Freeze（数据契约冻结）
+#### 里程碑 M1: Data Contract Freeze（数据契约冻结） ✅ 已完成
 
-> **触发条件：** T1.1 完成且 `tests/test_models.py` 全部通过。
-> **检查内容：** 对照 SPEC §6，逐项验证所有 16 个 dataclass、Enum、字段名、类型、`frozen=True` 约束是否与 SPEC 一致。
-> **通过标准：** 所有检查项通过，无偏差。若有偏差，必须在继续前修正 T1.1。
-> **冻结后规则：** M1 通过后，所有下游 Task（T2.1–T10.1）的 subagent 必须基于已冻结的 Data Contract 编码。若下游 task 发现 Data Contract 不足以支持其功能，必须先在 M1 修正（更新 SPEC + T1.1），再继续下游 task。
-> **影响范围：** T2.1, T2.2, T3.1, T4.1, T4.2, T5.1, T6.1, T7.1, T7.3, T8.1–T8.9, T9.1–T9.4, T10.1
+> **完成日期：** 2026-07-08
+> **审查结果：** 全部 16 个 dataclass + 6 个 Enum + 6 个 Config 子类通过 SPEC §6 逐项验证。
+> - 58/58 测试通过
+> - mypy: 0 错误 (16 个源文件)
+> - ruff: 0 错误
+> - 28 个符号从 `harness.models` 正确导出
+> - 所有字段名、类型、默认值、`frozen=True` 约束与 SPEC §6 一致
+> **状态：Data Contract Frozen**
 
 ---
 
@@ -1107,10 +1110,10 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 | Task | 状态 | Commit Hash | Subagent | 人工修改 |
 |------|------|-------------|----------|----------|
 | T0.1 | ✅ | — | Claude Code | — |
-| T1.1 | ⬜ | — | — | — |
-| **M1** | ⬜ | — | — | Data Contract Freeze |
-| T2.1 | ⬜ | — | — | — |
-| T2.2 | ⬜ | — | — | — |
+| T1.1 | ✅ | — | Claude Code | — |
+| **M1** | ✅ | — | Claude Code | Data Contract Frozen — 全部 16 个 dataclass + 6 个 Enum 通过 SPEC §6 逐项验证 |
+| T2.1 | ✅ | — | Claude Code | — |
+| T2.2 | ✅ | — | Claude Code | — |
 | T3.1 | ⬜ | — | — | — |
 | T3.2 | ⬜ | — | — | — |
 | T4.1 | ⬜ | — | — | — |
