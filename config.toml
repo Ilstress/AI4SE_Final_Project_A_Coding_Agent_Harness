@@ -1,0 +1,41 @@
+# AI4SE Coding Agent Harness — Default Configuration
+#
+# This file is a template. Copy it and edit for your project.
+# API Keys are NOT stored here — use the Credential Manager instead.
+#   First run:   ai4se-harness --setup
+#   Update key:  ai4se-harness --setup
+#   Clear keys:  ai4se-harness --clear-credentials
+
+[workspace]
+# Absolute path to the project workspace (REQUIRED)
+root = "/path/to/your/project"
+
+[llm]
+# LLM provider: "deepseek" or "openai" (REQUIRED)
+provider = "deepseek"
+# Model name (REQUIRED)
+model = "deepseek-chat"
+# API base URL (optional, defaults to provider's default)
+# api_base = "https://api.deepseek.com/v1"
+
+[loop]
+# Maximum Main Loop iterations (default: 10)
+max_iterations = 10
+# Maximum wall-clock time in seconds (default: 300)
+timeout_seconds = 300
+# Same-error threshold for convergence failure (default: 3)
+convergence_threshold = 3
+
+[guard]
+# HITL approval timeout in seconds (default: 120)
+hitl_timeout_seconds = 120
+# Custom rules (optional; defaults to built-in rules)
+# rules = []
+
+[tools]
+# Enabled tools (optional; defaults to all built-in tools)
+enabled = ["read_file", "write_file", "execute_shell", "task_complete"]
+
+[memory]
+# Memory storage file path (default: ./memory.json)
+file_path = "./memory.json"

@@ -1106,7 +1106,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 | Task | 状态 | Commit Hash | Subagent | 人工修改 |
 |------|------|-------------|----------|----------|
-| T0.1 | ⬜ | — | — | — |
+| T0.1 | ✅ | — | Claude Code | — |
 | T1.1 | ⬜ | — | — | — |
 | **M1** | ⬜ | — | — | Data Contract Freeze |
 | T2.1 | ⬜ | — | — | — |
