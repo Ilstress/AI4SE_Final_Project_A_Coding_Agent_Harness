@@ -372,8 +372,9 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T3.2: MockAdapter
+#### T3.2: MockAdapter ✅
 
+- **状态：** 已完成
 - **目标：** 实现返回预编程响应的 Mock LLM 适配器（SPEC §3.2, US-6）
 - **涉及文件：**
   - `harness/llm/mock_adapter.py` — `MockAdapter(AbstractLLM)`
@@ -400,8 +401,9 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T4.1: ToolRegistry + ToolDefinition
+#### T4.1: ToolRegistry + ToolDefinition ✅
 
+- **状态：** 已完成
 - **目标：** 实现工具注册表，支持静态注册和查询（SPEC §3.3.1）
 - **涉及文件：**
   - `harness/tools/__init__.py`
@@ -427,8 +429,9 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T4.2: Tool Handlers (read_file, write_file, execute_shell, task_complete)
+#### T4.2: Tool Handlers ✅
 
+- **状态：** 已完成
 - **目标：** 实现四个工具处理器（SPEC §3.5）
 - **涉及文件：**
   - `harness/tools/handlers/__init__.py`
@@ -455,8 +458,9 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T4.3: Tool Executor
+#### T4.3: Tool Executor ✅
 
+- **状态：** 已完成
 - **目标：** 实现工具执行器，根据 tool_name 分发到对应 handler（SPEC §3.5）
 - **涉及文件：**
   - `harness/tools/executor.py` — `ToolExecutor` 类
@@ -478,8 +482,9 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T5.1: Action Parser
+#### T5.1: Action Parser ✅
 
+- **状态：** 已完成
 - **目标：** 实现 LLM 响应的四分类解析器（SPEC §3.3）
 - **涉及文件：**
   - `harness/parser/__init__.py`
@@ -508,8 +513,9 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T6.1: Context Builder
+#### T6.1: Context Builder ✅
 
+- **状态：** 已完成
 - **目标：** 实现上下文组装器（SPEC §3.1.1）
 - **涉及文件：**
   - `harness/context/__init__.py`
@@ -536,8 +542,9 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T7.1: Rule Base + 6 Rules
+#### T7.1: Rule Base + 6 Rules ✅
 
+- **状态：** 已完成
 - **目标：** 实现 Rule 抽象接口和 6 条内置规则（SPEC §3.4）
 - **涉及文件：**
   - `harness/guard/__init__.py`
@@ -568,7 +575,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T7.2: Rule Engine
+#### T7.2: Rule Engine ✅
 
 - **目标：** 实现优先级排序的规则引擎（SPEC §3.4）
 - **涉及文件：**
@@ -592,7 +599,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T7.3: HumanApprovalProvider (Terminal + Mock)
+#### T7.3: HumanApprovalProvider (Terminal + Mock) ✅
 
 - **目标：** 实现可注入的 HITL 审批接口（SPEC §3.6.4）
 - **涉及文件：**
@@ -615,7 +622,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T7.4: Guardrail
+#### T7.4: Guardrail ✅
 
 - **目标：** 实现 Guardrail 门面，组合 RuleEngine + HumanApprovalProvider（SPEC §3.4）
 - **涉及文件：**
@@ -1114,17 +1121,17 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 | **M1** | ✅ | — | Claude Code | Data Contract Frozen — 全部 16 个 dataclass + 6 个 Enum 通过 SPEC §6 逐项验证 |
 | T2.1 | ✅ | — | Claude Code | — |
 | T2.2 | ✅ | — | Claude Code | — |
-| T3.1 | ⬜ | — | — | — |
-| T3.2 | ⬜ | — | — | — |
-| T4.1 | ⬜ | — | — | — |
-| T4.2 | ⬜ | — | — | — |
-| T4.3 | ⬜ | — | — | — |
-| T5.1 | ⬜ | — | — | — |
-| T6.1 | ⬜ | — | — | — |
-| T7.1 | ⬜ | — | — | — |
-| T7.2 | ⬜ | — | — | — |
-| T7.3 | ⬜ | — | — | — |
-| T7.4 | ⬜ | — | — | — |
+| T3.1 | ✅ | — | Claude Code | — |
+| T3.2 | ✅ | — | Claude Code | — |
+| T4.1 | ✅ | — | Claude Code | — |
+| T4.2 | ✅ | — | Claude Code | — |
+| T4.3 | ✅ | — | Claude Code | — |
+| T5.1 | ✅ | — | Claude Code | — |
+| T6.1 | ✅ | — | Claude Code | — |
+| T7.1 | ✅ | — | Claude Code | — |
+| T7.2 | ✅ | — | Claude Code | — |
+| T7.3 | ✅ | — | Claude Code | — |
+| T7.4 | ✅ | — | Claude Code | — |
 | T8.1 | ⬜ | — | — | — |
 | T8.2 | ⬜ | — | — | — |
 | T8.3 | ⬜ | — | — | — |
