@@ -1,0 +1,9 @@
+# GitLab CI configuration — 通用要求 §五.6
+# Equivalent to .github/workflows/unit-test.yml
+
+unit-test:
+  image: python:3.11-slim
+  before_script:
+    - pip install -e ".[dev]"
+  script:
+    - make test

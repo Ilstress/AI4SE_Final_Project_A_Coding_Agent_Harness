@@ -648,7 +648,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T8.1: FeedbackGenerator Base + ShellGen
+#### T8.1: FeedbackGenerator Base + ShellGen ✅
 
 - **目标：** 实现 FeedbackGenerator 抽象基类和 ShellGen（SPEC §3.6.1）
 - **涉及文件：**
@@ -670,7 +670,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T8.2: TestGen + LintGen + DiffGen
+#### T8.2: TestGen + LintGen + DiffGen ✅
 
 - **目标：** 实现测试、Lint、Diff 反馈生成器（SPEC §3.6.1）
 - **涉及文件：**
@@ -693,7 +693,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T8.3: GuardGen + ParserGen + ToolExecGen
+#### T8.3: GuardGen + ParserGen + ToolExecGen ✅
 
 - **目标：** 实现 Guardrail、Parser、Tool Executor 反馈生成器（SPEC §3.6.1）
 - **涉及文件：**
@@ -715,7 +715,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T8.4: FingerprintStrategy
+#### T8.4: FingerprintStrategy ✅
 
 - **目标：** 实现集中的 fingerprint 生成策略（SPEC §3.6.1）
 - **涉及文件：**
@@ -736,7 +736,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T8.5: FeedbackRouter
+#### T8.5: FeedbackRouter ✅
 
 - **目标：** 实现无状态反馈路由器（SPEC §3.6.2）
 - **涉及文件：**
@@ -761,7 +761,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T8.6: RecoveryController
+#### T8.6: RecoveryController ✅
 
 - **目标：** 实现恢复控制器——表驱动状态机（SPEC §3.6.3）
 - **涉及文件：**
@@ -786,7 +786,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T8.7: GovernanceController
+#### T8.7: GovernanceController ✅
 
 - **目标：** 实现治理控制器——表驱动状态机（SPEC §3.6.4）
 - **涉及文件：**
@@ -809,7 +809,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T8.8: CoordinationLayer
+#### T8.8: CoordinationLayer ✅
 
 - **目标：** 实现协调层——ConvergenceDetector + EscalationManager（SPEC §3.6.5）
 - **涉及文件：**
@@ -832,7 +832,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T8.9: FeedbackPipeline (集成)
+#### T8.9: FeedbackPipeline (集成) ✅
 
 - **目标：** 将 4 层集成为统一的 FeedbackPipeline 入口（SPEC §3.6）
 - **涉及文件：**
@@ -855,7 +855,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T9.1: MemoryStore
+#### T9.1: MemoryStore ✅
 
 - **目标：** 实现基于文件的记忆存储（SPEC §3.7）
 - **涉及文件：**
@@ -877,7 +877,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T9.2: MemoryRetriever
+#### T9.2: MemoryRetriever ✅
 
 - **目标：** 实现记忆检索器——全量注入（SPEC §3.7）
 - **涉及文件：**
@@ -896,7 +896,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T9.3: MemoryPolicy
+#### T9.3: MemoryPolicy ✅
 
 - **目标：** 实现确定性记忆持久化策略（SPEC §3.7）
 - **涉及文件：**
@@ -915,7 +915,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T9.4: Serializer
+#### T9.4: Serializer ✅
 
 - **目标：** 实现记忆序列化器——JSON MVP（SPEC §3.7）
 - **涉及文件：**
@@ -937,7 +937,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T10.1: Main Loop 状态机
+#### T10.1: Main Loop 状态机 ✅
 
 - **目标：** 实现事件驱动的 Main Loop 状态机（SPEC §3.1）
 - **涉及文件：**
@@ -969,7 +969,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T11.1: CLI Entry Point
+#### T11.1: CLI Entry Point ✅
 
 - **目标：** 实现命令行入口（SPEC §7.1.2, §8.5）
 - **涉及文件：**
@@ -996,7 +996,7 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 
 ---
 
-#### T12.1: Mechanism Demo
+#### T12.1: Mechanism Demo ✅
 
 - **目标：** 实现三项机制演示（SPEC §9.10, §A.6）
 - **涉及文件：**
@@ -1132,24 +1132,24 @@ Phase 3: LLM Adapters      Phase 4: Tools          │
 | T7.2 | ✅ | — | Claude Code | — |
 | T7.3 | ✅ | — | Claude Code | — |
 | T7.4 | ✅ | — | Claude Code | — |
-| T8.1 | ⬜ | — | — | — |
-| T8.2 | ⬜ | — | — | — |
-| T8.3 | ⬜ | — | — | — |
-| T8.4 | ⬜ | — | — | — |
-| T8.5 | ⬜ | — | — | — |
-| T8.6 | ⬜ | — | — | — |
-| T8.7 | ⬜ | — | — | — |
-| T8.8 | ⬜ | — | — | — |
-| T8.9 | ⬜ | — | — | — |
-| T9.1 | ⬜ | — | — | — |
-| T9.2 | ⬜ | — | — | — |
-| T9.3 | ⬜ | — | — | — |
-| T9.4 | ⬜ | — | — | — |
-| T10.1 | ⬜ | — | — | — |
-| T11.1 | ⬜ | — | — | — |
-| T12.1 | ⬜ | — | — | — |
-| T13.1 | ⬜ | — | — | — |
-| T13.2 | ⬜ | — | — | — |
-| T13.3 | ⬜ | — | — | — |
+| T8.1 | ✅ | — | Claude Code | — |
+| T8.2 | ✅ | — | Claude Code | — |
+| T8.3 | ✅ | — | Claude Code | — |
+| T8.4 | ✅ | — | Claude Code | — |
+| T8.5 | ✅ | — | Claude Code | — |
+| T8.6 | ✅ | — | Claude Code | — |
+| T8.7 | ✅ | — | Claude Code | — |
+| T8.8 | ✅ | — | Claude Code | — |
+| T8.9 | ✅ | — | Claude Code | — |
+| T9.1 | ✅ | — | Claude Code | — |
+| T9.2 | ✅ | — | Claude Code | — |
+| T9.3 | ✅ | — | Claude Code | — |
+| T9.4 | ✅ | — | Claude Code | — |
+| T10.1 | ✅ | — | — | — |
+| T11.1 | ✅ | — | — | — |
+| T12.1 | ✅ | — | — | — |
+| T13.1 | ✅ | — | — | — |
+| T13.2 | ✅ | — | — | — |
+| T13.3 | ✅ | — | — | — |
 
 > 状态：⬜ Pending | 🔄 In Progress | ✅ Complete | ❌ Blocked

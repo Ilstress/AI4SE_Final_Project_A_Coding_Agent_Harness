@@ -30,7 +30,7 @@ class LoopConfig:
     """Main Loop configuration."""
 
     max_iterations: int = 10
-    timeout_seconds: int = 300
+    timeout_seconds: float = 300.0
     convergence_threshold: int = 3
 
 
